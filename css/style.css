@@ -1,0 +1,109 @@
+body {
+	overflow-x: hidden;
+}
+main {
+	position: relative;
+}
+main:before {
+	background: url(../img/layout.jpg) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	filter: brightness(.7);
+}
+a {
+	transition: all .3s ease-in-out;
+}
+main .lattice .top {
+	width: 100vw;
+	height: 50vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+}
+main .lattice .top a {
+	width: calc(16% - 15px);
+	border: 15px solid transparent;
+	border-image-source: url(../img/jail_1.png);
+	border-image-repeat: round;
+	border-image-slice: 30 fill;
+	border-left: none;
+}
+main .lattice .top a:nth-of-type(1) {
+	width: calc(16% - 15px);
+	border-left: 15px solid transparent;
+}
+main .lattice .middle {
+	width: 100vw;
+	height: 20vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	border: 15px solid transparent;
+	border-image-source: url(../img/jail_hor.png);
+	border-image-repeat: round;
+	border-image-slice: 30 fill;
+	border-left: none;
+	border-right: none;
+}
+main .lattice .middle div, main .lattice .middle a {
+	width: calc((100% / 7) - 15px);
+	border: 15px solid transparent;
+	border-image-source: url(../img/jail_1.png);
+	border-image-repeat: round;
+	border-image-slice: 30 fill;
+	border-left: none;
+	position: relative;
+}
+main .lattice .middle div.item1 {
+	width: calc((100% / 7) - 30px);
+	border-left: 15px solid transparent;
+}
+main .lattice .middle a.item4 span {
+	position: absolute;
+    z-index: 1;
+    width: calc(100% + 15px);
+    height: calc(100% + 45px);
+    left: -5px;
+    top: -20px;
+    background: url(../img/lock.png) 50% no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    box-shadow: 0 0 10px #000000;
+}
+main .lattice .top a:hover {
+	background: #00000080;
+}
+main .lattice .middle a:hover {
+	/*cursor: url(../img/key.png), pointer;*/
+}
+main .lattice .bottom {
+	width: 100vw;
+	height: 30vh;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+main .lattice .bottom div {
+	width: calc(12.5% - 15px);
+	border: 15px solid transparent;
+	border-image-source: url(../img/jail_1.png);
+	border-image-repeat: round;
+	border-image-slice: 30 fill;
+	border-left: none;
+}
