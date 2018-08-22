@@ -5,7 +5,7 @@ main {
 	position: relative;
 }
 main:before {
-	background: url(../img/layout.jpg) 50% no-repeat;
+	background: url(../img/lay.jpg) 50% no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	position: absolute;
@@ -73,21 +73,21 @@ main .lattice .middle div.item1 {
 }
 main .lattice .middle a.item4 span {
 	position: absolute;
-    z-index: 1;
-    width: calc(100% + 15px);
-    height: calc(100% + 45px);
-    left: -5px;
-    top: -20px;
-    background: url(../img/lock.png) 50% no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    box-shadow: 0 0 10px #000000;
+	z-index: 1;
+	width: calc(100% + 15px);
+	height: calc(100% + 45px);
+	left: -5px;
+	top: -20px;
+	background: url(../img/lock.png) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	box-shadow: 0 0 10px #000000;
 }
 main .lattice .top a:hover {
-	background: #00000080;
+	/*background: #00000080;*/
 }
 main .lattice .middle a:hover {
-	/*cursor: url(../img/key.png), pointer;*/
+	cursor: url(../img/key.cur), pointer;
 }
 main .lattice .bottom {
 	width: 100vw;
@@ -106,4 +106,37 @@ main .lattice .bottom div {
 	border-image-repeat: round;
 	border-image-slice: 30 fill;
 	border-left: none;
+}
+main .men1 {
+	left: 11%;
+	bottom: 0%;
+	z-index: -1;
+	position: absolute;
+	width: 17vw;
+	padding-top: 90vh;
+	background: url(../img/man-1.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	filter: brightness(0);
+	transition: all .3s linear;
+}
+main .men2 {
+	left: 26%;
+	bottom: 0%;
+	z-index: -1;
+	position: absolute;
+	width: 19vw;
+	padding-top: 90vh;
+	background: url(../img/man-2.png) 50% no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	filter: brightness(0);
+	transition: all .3s linear;
+}
+.table {
+	width: 100%;
+	padding-top: 15vh;
+	background: url(../img/table.png) 50% no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }

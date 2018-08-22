@@ -7,10 +7,14 @@
 	<link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
+	<!-- <div class="table"></div> -->
 	<main>
 		<div class="lay">
 			
 		</div>
+		<div class="men1"></div>
+		<div class="men2"></div>
+
 		<div class="lattice">
 			<div class="top">
 				<div></div>
@@ -42,5 +46,21 @@
 			</div>
 		</div>
 	</main>
+	<script type="text/javascript">
+		but1 = document.querySelector('.lattice .top .item1');
+		but1.onmouseover = function () {
+			document.querySelector('.men1').style.filter = 'brightness(.7)';
+		}
+		but1.onmouseout = function () {
+			document.querySelector('.men1').style.filter = 'brightness(0)';
+		}
+		but2 = document.querySelector('.lattice .top .item2');
+		but2.onmouseover = function () {
+			document.querySelector('.men2').style.filter = 'brightness(.7)';
+		}
+		but2.onmouseout = function () {
+			document.querySelector('.men2').style.filter = 'brightness(0)';
+		}
+	</script>
 </body>
 </html>
